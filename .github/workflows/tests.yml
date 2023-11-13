@@ -18,13 +18,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Install Go
-      uses: actions/setup-go@93397bea11091df50f3d7e59dc26a7711a8bcfbe
+      uses: actions/setup-go@bfd2fb341f32be7281829126376a12a780ca79fc
       with:
         go-version: ${{ matrix.go-version }}
     - name: Checkout code
       uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11
     - name: Run static checks
-      uses: golangci/golangci-lint-action@3a919529898de77ec3da873e3063ca4b10e7f5cc
+      uses: golangci/golangci-lint-action@9381bb2c2c1938fd0426ca6a95eb88bc688bb554
       with:
         version: v1.51.1
         # use our .golangci.yml and configure output to be logged in the GHA, in addition to annotating the commit.
