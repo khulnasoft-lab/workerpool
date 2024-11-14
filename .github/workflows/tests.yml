@@ -22,7 +22,7 @@ jobs:
       with:
         go-version: ${{ matrix.go-version }}
     - name: Checkout code
-      uses: actions/checkout@3b9b8c884f6b4bb4d5be2779c26374abadae0871
+      uses: actions/checkout@cbb722410c2e876e24abbe8de2cc27693e501dcb
     - name: Run static checks
       uses: golangci/golangci-lint-action@363026db346476e64026d11fad940c24c2bef93f
       with:
