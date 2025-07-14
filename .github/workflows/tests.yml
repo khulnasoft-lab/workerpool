@@ -24,7 +24,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@09d2acae674a48949e3602304ab46fd20ae0c42f
     - name: Run static checks
-      uses: golangci/golangci-lint-action@363026db346476e64026d11fad940c24c2bef93f
+      uses: golangci/golangci-lint-action@3d16f46f229bd30357c5de1a861936e9a560e973
       with:
         version: v1.51.1
         # use our .golangci.yml and configure output to be logged in the GHA, in addition to annotating the commit.
